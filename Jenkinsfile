@@ -5,6 +5,10 @@ pipeline {
         }
     }
 
+environment {
+    PATH = "/opt/maven/bin/:$PATH"
+}
+
     stages {
         stage('build code') {
             steps {
@@ -13,3 +17,4 @@ pipeline {
         }
     }
 }
+
